@@ -5,7 +5,7 @@ let assetPrefix = ''
 let basePath = ''
 if (isGithubActions) {
   const repo = process.env.GITHUB_REPOSITORY.replace(/.*?\//, '')
-  assetPrefix = `https://www.24campercamp.pl/${repo}/`
+  assetPrefix = `https://www.24campercamp.pl/`
   basePath = `https://www.24campercamp.pl/${repo}`
 }
 
