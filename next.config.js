@@ -1,16 +1,11 @@
 /** @type {import('next').NextConfig} */
 
 const isGithubActions = process.env.GITHUB_ACTIONS || false
-
 let assetPrefix = ''
 let basePath = '/'
-console.log('isGithubActions',isGithubActions,);
 if (isGithubActions) {
   const repo = process.env.GITHUB_REPOSITORY.replace(/.*?\//, '')
-
-console.log('repo',repo,);
-
-  assetPrefix = `/${repo}/`
+  assetPrefix = `https://www.24campercamp.pl/${repo}/`
   basePath = `/${repo}`
 }
 
@@ -19,5 +14,5 @@ const nextConfig = {
   assetPrefix: assetPrefix,
   basePath: basePath,
 };
-
+console.log('nextConfig',nextConfig,);
 module.exports = nextConfig;
