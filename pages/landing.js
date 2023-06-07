@@ -3,16 +3,15 @@ import React from "react";
 import classNames from "classnames";
 // @material-ui/core components
 import { makeStyles } from "@material-ui/core/styles";
+import Link from "next/link";
 
 // @material-ui/icons
 
 // core components
 import Header from "/components/Header/Header.js";
-import Footer from "/components/Footer/Footer.js";
 import GridContainer from "/components/Grid/GridContainer.js";
 import GridItem from "/components/Grid/GridItem.js";
 import Button from "/components/CustomButtons/Button.js";
-import HeaderLinks from "/components/Header/HeaderLinks.js";
 import Parallax from "/components/Parallax/Parallax.js";
 
 import styles from "/styles/jss/nextjs-material-kit/pages/landingPage.js";
@@ -52,16 +51,25 @@ export default function LandingPage(props) {
                 A nice and safe place for your camper or a car. You can stay for couple of hours, entire day or event the entire night. 
               </h4>
               <br />
-              {/* <Button
-                color="danger"
-                size="lg"
-                href="https://www.youtube.com/watch?v=dQw4w9WgXcQ&ref=creativetim"
-                target="_blank"
-                rel="noopener noreferrer"
-              >
-                <i className="fas fa-play" />
-                Watch video
-              </Button> */}
+              <Link href="/login">
+            <a className={classes.link}>
+              <Button color="primary" size="lg" simple>
+                See the prices
+              </Button>
+            </a>
+          </Link>
+          <Link href="/login">
+                <a>
+                  <Button
+                    color="danger"
+                    size="lg"
+                    rel="noopener noreferrer"
+                  >
+                    <i className="fas fa-play" />
+                    Watch video
+                  </Button>
+                </a>
+            </Link>
             </GridItem>
           </GridContainer>
         </div>

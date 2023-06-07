@@ -3,14 +3,12 @@ import React from "react";
 import { makeStyles } from "@material-ui/core/styles";
 
 // @material-ui/icons
-import Chat from "@material-ui/icons/Chat";
-import VerifiedUser from "@material-ui/icons/VerifiedUser";
-import Fingerprint from "@material-ui/icons/Fingerprint";
 import AirportShuttleIcon from '@mui/icons-material/AirportShuttle';
 import AlarmOnIcon from '@mui/icons-material/AlarmOn';
 import CameraOutdoorIcon from '@mui/icons-material/CameraOutdoor';
 import IcecreamIcon from '@mui/icons-material/Icecream';
 import SettingsIcon from '@mui/icons-material/Settings';
+import LocalCarWashIcon from '@mui/icons-material/LocalCarWash';
 // core components
 import GridContainer from "/components/Grid/GridContainer.js";
 import GridItem from "/components/Grid/GridItem.js";
@@ -28,11 +26,7 @@ export default function ProductSection() {
         <GridItem xs={12} sm={12} md={8}>
           <h2 className={classes.title}>See what we offer</h2>
           <h5 className={classes.description}>
-            This is the paragraph where you can write more details about your
-            product. Keep you user engaged by providing meaningful information.
-            Remember that by this time, the user is curious, otherwise he wouldn
-            {"'"}t scroll to get here. Add a button if you want the user to see
-            more.
+            It is not quite just a parking lot, there will be some more stuff coming as we develop a little more
           </h5>
         </GridItem>
       </GridContainer>
@@ -41,7 +35,7 @@ export default function ProductSection() {
           <GridItem xs={12} sm={12} md={4}>
             <InfoArea
               title="Camper Parking Lot"
-              description="Divide details about your product or agency work into parts. Write a few lines about each one. A paragraph describing a feature will be enough."
+              description="A parking lot where you can park your camper van as well as do the entire service."
               icon={AirportShuttleIcon}
               iconColor="rose"
               vertical
@@ -50,7 +44,7 @@ export default function ProductSection() {
           <GridItem xs={12} sm={12} md={4}>
             <InfoArea
               title="No Time Limit"
-              description="You can stay as long as you want. No time limit just let"
+              description="You can stay as long as you want. No time limit just let us know"
               icon={AlarmOnIcon}
               iconColor="success"
               vertical
@@ -67,17 +61,17 @@ export default function ProductSection() {
           </GridItem>
           <GridItem xs={12} sm={12} md={4}>
             <InfoArea
-              title="Monitored 24/7"
-              description="The parking lot is fully monitored for the entire stay of yours."
-              icon={CameraOutdoorIcon}
-              iconColor="danger"
+              title="Car/Camper Wash"
+              description="For extra pay we can offer you a full car wash service while you are stayig."
+              icon={LocalCarWashIcon}
+              iconColor="info"
               vertical
             />
           </GridItem>
           <GridItem xs={12} sm={12} md={4}>
             <InfoArea
               title="Snack"
-              description="The parking lot is fully monitored for the entire stay of yours."
+              description="There will be always opportunity to grab a snack while being on the go."
               icon={IcecreamIcon}
               iconColor="warning"
               vertical
@@ -86,9 +80,9 @@ export default function ProductSection() {
           <GridItem xs={12} sm={12} md={4}>
             <InfoArea
               title="Service"
-              description="The parking lot is fully monitored for the entire stay of yours."
+              description="The parking lot is adapted to camper vans, meaning you will be able to empty and refill you tanks :)"
               icon={SettingsIcon}
-              iconColor="info"
+              iconColor="danger"
               vertical
             />
           </GridItem>

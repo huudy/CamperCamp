@@ -1,7 +1,7 @@
 /** @type {import('next').NextConfig} */
 
 const isGithubActions = process.env.GITHUB_ACTIONS || false
-let assetPrefix = ''
+let assetPrefix = '/'
 let basePath = ''
 if (isGithubActions) {
   const repo = process.env.GITHUB_REPOSITORY.replace(/.*?\//, '')
@@ -11,8 +11,8 @@ if (isGithubActions) {
 
 const nextConfig = {
   reactStrictMode: true,
-  assetPrefix: assetPrefix,
-  basePath: basePath,
+  assetPrefix,
+  basePath,
 };
 console.log('nextConfig',nextConfig,);
 module.exports = nextConfig;
