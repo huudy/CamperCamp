@@ -12,6 +12,6 @@ if (isGithubActions) {
 const nextConfig = {
   reactStrictMode: true,
   assetPrefix,
-  basePath,
+  basePath
 };
 module.exports = nextConfig;
