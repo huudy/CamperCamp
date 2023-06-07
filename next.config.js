@@ -14,5 +14,4 @@ const nextConfig = {
   assetPrefix,
   basePath,
 };
-console.log('nextConfig',nextConfig,);
 module.exports = nextConfig;
