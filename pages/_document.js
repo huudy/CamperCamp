@@ -32,6 +32,8 @@ class MyDocument extends Document {
             data-site="YOUR_DOMAIN_HERE"
             src="https://api.nepcha.com/js/nepcha-analytics.js"
           ></script>
+          <script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-8715803075448307"
+            crossorigin="anonymous"></script>
         </Head>
         <body>
           <div id="page-transition"></div>
