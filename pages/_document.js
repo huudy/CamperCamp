@@ -27,7 +27,7 @@ class MyDocument extends Document {
           />
           {/* <!-- Nepcha Analytics (nepcha.com) -->
           <!-- Nepcha is a easy-to-use web analytics. No cookies and fully compliant with GDPR, CCPA and PECR. --> */}
-          <script defer data-site="24campercamp.pl" src="https://api.nepcha.com/js/nepcha-analytics.js"></script>
+          <script data-site="24campercamp.pl" src="https://api.nepcha.com/js/nepcha-analytics.js"></script>
           <script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-8715803075448307"
             crossorigin="anonymous"></script>
         </Head>
